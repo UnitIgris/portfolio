@@ -1,0 +1,40 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Lunion Samuel's homepage",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "prettier": "prettier -write",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UnitIgris/portfolio.git"
+  },
+  "keywords": [],
+  "author": "lunion.sam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UnitIgris/portfolio/issues"
+  },
+  "homepage": "https://github.com/UnitIgris/portfolio#readme",
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.17",
+    "@chakra-ui/react": "^2.5.1",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "framer-motion": "^10.1.0",
+    "next": "^13.2.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
+    "three": "^0.150.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.35.0",
+    "eslint-config-next": "^13.2.3",
+    "prettier": "^2.8.4"
+  }
+}
