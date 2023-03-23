@@ -42,14 +42,14 @@ const VoxelRoom = () => {
       renderer.outputEncoding = THREE.sRGBEncoding
       const scene = new THREE.Scene()
 
-      const target = new THREE.Vector3(-0.5, 1.2, 0)
+      const target = new THREE.Vector3(-0.5, 1, 0)
       const initialCameraPosition = new THREE.Vector3(
         20 * Math.sin(0.2 * Math.PI),
         10,
         20 * Math.cos(0.2 * Math.PI)
       )
 
-      const scale = scH * 0.005 + 6.9
+      const scale = scH * 0.005 + 7.5
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
@@ -63,7 +63,7 @@ const VoxelRoom = () => {
 
       //Control Camera
       const controls = new OrbitControls(camera, renderer.domElement)
-      controls.autoRotate = true
+     
       controls.target = target
       controls.maxZoom = 2
       controls.minZoom = 1
@@ -84,7 +84,7 @@ const VoxelRoom = () => {
           const p = initialCameraPosition
           const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 20
 
-          camera.position.y = 8
+          camera.position.y = 10
           camera.position.x =
             p.x * Math.cos(rotSpeed) + p.z * Math.sin(rotSpeed)
           camera.position.z =

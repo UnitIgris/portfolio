@@ -5,9 +5,6 @@ const Layout = ({ children, title }) => {
   const t = `${title} - Samuel Lunion`
   return (
     <motion.article
-      initial="hidden"
-      animate="enter"
-      exit="exit"
       transition={{ duration: 0.4, type: 'easeInOut' }}
       style={{ position: 'relative' }}
     >
