@@ -88,42 +88,104 @@ const Page = () => {
             <Heading as="h3" variant="section-title">
               Bio
             </Heading>
-            <Box pt={2} position="relative" >
-              <Accordion>
+            <Box pt={2} position="relative">
+              <Accordion allowToggle>
                 <AccordionItem m={4}>
-                  <h2>
-                    <AccordionButton>
-                      <Box flex="1" textAlign="left">
-                        Titre Section 1
-                      </Box>
-                      <AccordionIcon />
-                    </AccordionButton>
-                  </h2>
-                  <AccordionPanel pb={4}>Hello</AccordionPanel>
+                  <AccordionButton>
+                    <Box flex="1" textAlign="left">
+                      Titre Section 1
+                    </Box>
+                    <AccordionIcon />
+                  </AccordionButton>
+
+                  <AccordionPanel mt={4}>Hello</AccordionPanel>
                 </AccordionItem>
                 <AccordionItem m={4}>
-                  <h2>
-                    <AccordionButton>
-                      <Box flex="1" textAlign="left">
-                        Titre Section 2
-                      </Box>
-                      <AccordionIcon />
-                    </AccordionButton>
-                  </h2>
-                  <AccordionPanel pb={4}>Hello</AccordionPanel>
+                  <AccordionButton>
+                    <Box flex="1" textAlign="left">
+                      Titre Section 2
+                    </Box>
+                    <AccordionIcon />
+                  </AccordionButton>
+
+                  <AccordionPanel mt={4}>Hello</AccordionPanel>
                 </AccordionItem>
-                <AccordionItem pb={3}m={4}>
-                  <h2>
-                    <AccordionButton>
-                      <Box flex="1" textAlign="left">
-                        Titre Section 3
-                      </Box>
-                      <AccordionIcon />
-                    </AccordionButton>
-                  </h2>
-                  <AccordionPanel pb={4}>Hello</AccordionPanel>
+                <AccordionItem m={4}>
+                  <AccordionButton>
+                    <Box flex="1" textAlign="left">
+                      Titre Section 3
+                    </Box>
+                    <AccordionIcon />
+                  </AccordionButton>
+
+                  <AccordionPanel mt={4}>Hello</AccordionPanel>
                 </AccordionItem>
               </Accordion>
+              <Accordion variant={'blue'} allowToggle>
+                <AccordionItem m={4}>
+                  <AccordionButton>
+                    <Box flex="1" textAlign="left">
+                      Titre Section 1
+                    </Box>
+                    <AccordionIcon />
+                  </AccordionButton>
+
+                  <AccordionPanel mt={4}>Hello</AccordionPanel>
+                </AccordionItem>
+                <AccordionItem m={4}>
+                  <AccordionButton>
+                    <Box flex="1" textAlign="left">
+                      Titre Section 2
+                    </Box>
+                    <AccordionIcon />
+                  </AccordionButton>
+
+                  <AccordionPanel mt={4}>Hello</AccordionPanel>
+                </AccordionItem>
+                <AccordionItem m={4}>
+                  <AccordionButton>
+                    <Box flex="1" textAlign="left">
+                      Titre Section 3
+                    </Box>
+                    <AccordionIcon />
+                  </AccordionButton>
+
+                  <AccordionPanel mt={4}>Hello</AccordionPanel>
+                </AccordionItem>
+              </Accordion>
+              <Accordion variant={'green'} allowToggle>
+                <AccordionItem m={4}>
+                  <AccordionButton>
+                    <Box flex="1" textAlign="left">
+                      Titre Section 1
+                    </Box>
+                    <AccordionIcon />
+                  </AccordionButton>
+
+                  <AccordionPanel mt={4}>Hello</AccordionPanel>
+                </AccordionItem>
+                <AccordionItem m={4}>
+                  <AccordionButton>
+                    <Box flex="1" textAlign="left">
+                      Titre Section 2
+                    </Box>
+                    <AccordionIcon />
+                  </AccordionButton>
+
+                  <AccordionPanel mt={4}>Hello</AccordionPanel>
+                </AccordionItem>
+                <AccordionItem m={4}>
+                  <AccordionButton>
+                    <Box flex="1" textAlign="left">
+                      Titre Section 3
+                    </Box>
+                    <AccordionIcon />
+                  </AccordionButton>
+
+                  <AccordionPanel mt={4}>Hello</AccordionPanel>
+                </AccordionItem>
+              </Accordion>
+              
             </Box>
           </Section>
 
