@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Text, useColorModeValue } from '@chakra-ui/react'
+import { Text } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 
 const LogoBox = styled.span`
@@ -22,21 +22,18 @@ const LogoBox = styled.span`
 `
 
 const Logo = () => {
-  const footPrintImg = `/images/Logo${useColorModeValue('', '-dark')}.png`
-
   return (
     <Link href="/" scroll={false}>
       <>
         <LogoBox>
-          <Image src={footPrintImg} width={30} height={30} alt="logo" />
-          <Text
-            color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-            fontFamily='M PLUS Rounded 1c", sans-serif'
-            fontWeight="bold"
-            
-            
-          >
-            Samuel Lunion
+          <Text color="#a48b77" fontFamily="Roboto Mono" fontSize={24}>
+            LunionSam
+          </Text>
+          <Text color="#fbf8eb" fontFamily="Roboto Mono" fontSize={24}>
+            .
+          </Text>
+          <Text color="#9c5b2b" fontFamily="Roboto Mono" fontSize={24}>
+            _
           </Text>
         </LogoBox>
       </>
