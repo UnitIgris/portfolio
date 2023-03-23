@@ -13,7 +13,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
       as={NextLink}
       href={href}
       p={2}
-      bg={active ? 'grassTeal' : undefined}
+      bg={active ? 'orangeRoom' : undefined}
       color={active ? '#202023' : 'whiteAlpha.900'}
       target={target}
       {...props}
@@ -61,12 +61,12 @@ const Navbar = (props) => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/work" path={path}>
-            Work
+          <LinkItem href="/works" path={path}>
+            Works
           </LinkItem>
           <LinkItem
             target="_blank"
-            href="https://github.com/UnitIgris"
+            href="https://github.com/UnitIgris/portfolio"
             path={path}
             display="inline-flex"
             alignItems="center"
