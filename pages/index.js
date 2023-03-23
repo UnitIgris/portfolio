@@ -89,71 +89,6 @@ const Page = () => {
               Bio
             </Heading>
             <Box pt={2} position="relative">
-              {/* ********************************************* */}
-              <Accordion allowToggle>
-                <AccordionItem m={4}>
-                  <AccordionButton>
-                    <Box flex="1" textAlign="left">
-                      Titre Section 1
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-
-                  <AccordionPanel mt={4}>Hello</AccordionPanel>
-                </AccordionItem>
-                <AccordionItem m={4}>
-                  <AccordionButton>
-                    <Box flex="1" textAlign="left">
-                      Titre Section 2
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-
-                  <AccordionPanel mt={4}>Hello</AccordionPanel>
-                </AccordionItem>
-                <AccordionItem m={4}>
-                  <AccordionButton>
-                    <Box flex="1" textAlign="left">
-                      Titre Section 3
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-
-                  <AccordionPanel mt={4}>Hello</AccordionPanel>
-                </AccordionItem>
-              </Accordion>
-              <Accordion variant={'blue'} allowToggle>
-                <AccordionItem m={4}>
-                  <AccordionButton>
-                    <Box flex="1" textAlign="left">
-                      Titre Section 1
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-
-                  <AccordionPanel mt={4}>Hello</AccordionPanel>
-                </AccordionItem>
-                <AccordionItem m={4}>
-                  <AccordionButton>
-                    <Box flex="1" textAlign="left">
-                      Titre Section 2
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-
-                  <AccordionPanel mt={4}>Hello</AccordionPanel>
-                </AccordionItem>
-                <AccordionItem m={4}>
-                  <AccordionButton>
-                    <Box flex="1" textAlign="left">
-                      Titre Section 3
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-
-                  <AccordionPanel mt={4}>Hello</AccordionPanel>
-                </AccordionItem>
-              </Accordion>
               <Accordion variant={'green'} allowToggle>
                 <AccordionItem m={4}>
                   <AccordionButton>
@@ -185,43 +120,7 @@ const Page = () => {
 
                   <AccordionPanel mt={4}>Hello</AccordionPanel>
                 </AccordionItem>
-                
               </Accordion>
-
-              <Accordion variant={'purple'} allowToggle>
-                <AccordionItem m={4}>
-                  <AccordionButton>
-                    <Box flex="1" textAlign="left">
-                      Titre Section 1
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-
-                  <AccordionPanel mt={4}>Hello</AccordionPanel>
-                </AccordionItem>
-                <AccordionItem m={4}>
-                  <AccordionButton>
-                    <Box flex="1" textAlign="left">
-                      Titre Section 2
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-
-                  <AccordionPanel mt={4}>Hello</AccordionPanel>
-                </AccordionItem>
-                <AccordionItem m={4}>
-                  <AccordionButton>
-                    <Box flex="1" textAlign="left">
-                      Titre Section 3
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-
-                  <AccordionPanel mt={4}>Hello</AccordionPanel>
-                </AccordionItem>
-                
-              </Accordion>
-              {/* ********************************************* */}
             </Box>
           </Section>
 
