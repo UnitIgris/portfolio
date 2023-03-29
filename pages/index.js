@@ -6,20 +6,15 @@ import {
   Link,
   List,
   ListItem,
-  Accordion,
-  AccordionButton,
-  AccordionIcon,
-  AccordionItem,
-  AccordionPanel,
-  IconButton,
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-
 import Paragraph from '../components/paragraph'
+import CustomAccordion from "../components/accordion"
 
 import { ChevronRightIcon } from '@chakra-ui/icons'
+
 import { IoLogoGithub } from 'react-icons/io5'
 
 const Page = () => {
@@ -54,7 +49,7 @@ const Page = () => {
         <Container pt={16} maxW="container.sm">
           <Section delay={0.1}>
             <Heading as="h3" variant="section-title">
-              Work
+              About
             </Heading>
             <Paragraph>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -86,42 +81,16 @@ const Page = () => {
 
           <Section delay={0.3}>
             <Heading as="h3" variant="section-title">
-              Bio
+              Me in accordion
             </Heading>
-            <Box pt={2} position="relative">
-              <Accordion variant={'green'} allowToggle>
-                <AccordionItem m={4}>
-                  <AccordionButton>
-                    <Box flex="1" textAlign="left">
-                      Titre Section 1
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
+            <CustomAccordion />
+          </Section>
 
-                  <AccordionPanel mt={4}>Hello</AccordionPanel>
-                </AccordionItem>
-                <AccordionItem m={4}>
-                  <AccordionButton>
-                    <Box flex="1" textAlign="left">
-                      Titre Section 2
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-
-                  <AccordionPanel mt={4}>Hello</AccordionPanel>
-                </AccordionItem>
-                <AccordionItem m={4}>
-                  <AccordionButton>
-                    <Box flex="1" textAlign="left">
-                      Titre Section 3
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-
-                  <AccordionPanel mt={4}>Hello</AccordionPanel>
-                </AccordionItem>
-              </Accordion>
-            </Box>
+          <Section delay={0.6}>
+            <Heading as="h3" variant="section-title">
+              Some projects
+            </Heading>
+           
           </Section>
 
           <Section delay={0.6}>
