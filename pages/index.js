@@ -6,12 +6,13 @@ import {
   Link,
   List,
   ListItem,
+  Accordion,
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
-import CustomAccordion from "../components/accordion"
+import { CustomAccordion, CustomPannel } from '../components/accordion'
 
 import { ChevronRightIcon } from '@chakra-ui/icons'
 
@@ -83,14 +84,39 @@ const Page = () => {
             <Heading as="h3" variant="section-title">
               Me in accordion
             </Heading>
-            <CustomAccordion />
+            <Box position="relative">
+              <Accordion variant={'orange'} allowToggle>
+                <CustomAccordion
+                  title={'Selection Titre exemple'}
+                  date={'Date - Date'}
+                >
+                  <CustomPannel
+                    location={'Location'}
+                    link={'This-website.com'}
+                    Bottomdivider={true}
+                  />
+                  <CustomPannel
+                    location={'Location'}
+                    link={'This-website.com'}
+                  />
+                </CustomAccordion>
+                <CustomAccordion
+                  title={'Selection Titre exemple'}
+                  date={'Date - Date'}
+                >
+                  <CustomPannel
+                    location={'Location'}
+                    link={'This-website.com'}
+                  />
+                </CustomAccordion>
+              </Accordion>
+            </Box>
           </Section>
 
           <Section delay={0.6}>
             <Heading as="h3" variant="section-title">
               Some projects
             </Heading>
-           
           </Section>
 
           <Section delay={0.6}>
