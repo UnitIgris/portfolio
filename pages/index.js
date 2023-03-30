@@ -14,14 +14,16 @@ import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { CustomAccordion, CustomPannel } from '../components/accordion'
 
-import { ChevronRightIcon } from '@chakra-ui/icons'
-
-import { IoLogoGithub } from 'react-icons/io5'
+import {
+  IoLogoGithub,
+  IoLogoLinkedin,
+  IoDownloadOutline,
+} from 'react-icons/io5'
 
 const Page = () => {
   return (
     <Layout>
-      <Container
+      <Box
         display={'flex'}
         justifyItems={'center'}
         alignItems={'center'}
@@ -45,9 +47,9 @@ const Page = () => {
           fontSize={[14, 14, 22]}
           textAlign="center"
         >
-          FRONT END, APP DEVELOPER & DESIGNER
+          {'FRONT END, APP DEVELOPER & DESIGNER'}
         </Heading>{' '}
-        <Container pt={16} maxW="container.sm">
+        <Box pt={16} maxW="container.sm">
           <Section delay={0.1}>
             <Heading as="h3" variant="section-title">
               About
@@ -56,7 +58,7 @@ const Page = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea{' '}
+              nisi ut aliquip ex ea&nbsp;
               <Link as={NextLink} href="" passHref scroll={false}>
                 commodo
               </Link>
@@ -73,9 +75,9 @@ const Page = () => {
                 as={NextLink}
                 href="/works"
                 scroll={false}
-                rightIcon={<ChevronRightIcon />}
+                rightIcon={<IoDownloadOutline />}
               >
-                My portfolio
+                Curriculum Vitae
               </Button>
             </Box>
           </Section>
@@ -92,12 +94,16 @@ const Page = () => {
                 >
                   <CustomPannel
                     location={'Location'}
-                    link={'This-website.com'}
+                    link={'agence-belle-epoque.fr'}
+                    content={
+                      'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+                    }
+                    tag={"holla"}
                     Bottomdivider={true}
                   />
                   <CustomPannel
                     location={'Location'}
-                    link={'This-website.com'}
+                    link={'korper.io'}
                   />
                 </CustomAccordion>
                 <CustomAccordion
@@ -124,17 +130,25 @@ const Page = () => {
               On the web
             </Heading>
             <List>
-              <ListItem>
+              <ListItem display={'flex'} flexDirection={'column'}>
                 <Link href="https://github.com/UnitIgris" target="_blank">
                   <Button variant="ghost" leftIcon={<IoLogoGithub />}>
                     @UnitIgris
                   </Button>
                 </Link>
+                <Link
+                  href="https://linkedin.com/in/samuel-lunion/"
+                  target="_blank"
+                >
+                  <Button variant="ghost" leftIcon={<IoLogoLinkedin />}>
+                    Samuel Luinon
+                  </Button>
+                </Link>
               </ListItem>
             </List>
           </Section>
-        </Container>
-      </Container>
+        </Box>
+      </Box>
     </Layout>
   )
 }
