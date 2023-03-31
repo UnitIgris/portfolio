@@ -89,25 +89,31 @@ const Page = () => {
             <Box position="relative">
               <Accordion variant={'orange'} allowToggle>
                 <CustomAccordion
-                  title={'Selection Titre exemple'}
+                  title={'Experience'}
                   date={'Date - Date'}
                 >
                   <CustomPannel
-                    location={'Location'}
+                    location={'Paris'}
                     link={'agence-belle-epoque.fr'}
                     content={
                       'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
                     }
-                    tag={"holla"}
+                    tag={['holla', 'miam']}
+                    src={'belleEpoque.jpg'}
                     Bottomdivider={true}
                   />
                   <CustomPannel
-                    location={'Location'}
+                    location={'Paris'}
                     link={'korper.io'}
+                    content={
+                      'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.'
+                    }
+                    tag={["como","està"]}
+                    src={'korper.png'}
                   />
                 </CustomAccordion>
                 <CustomAccordion
-                  title={'Selection Titre exemple'}
+                  title={'Education'}
                   date={'Date - Date'}
                 >
                   <CustomPannel

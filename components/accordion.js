@@ -18,114 +18,26 @@ import {
 import { LinkIcon } from '@chakra-ui/icons'
 import { IoLocationSharp } from 'react-icons/io5'
 
-function FlexText(date, title) {
-  const [isLargerThan400] = useMediaQuery('(min-width: 445px)')
-
-  return isLargerThan400 ? (
-    <>
-      <Text variant={'text-poppins'}>{title}</Text>
-      <Text variant={'text-poppins'}>{date}</Text>
-    </>
-  ) : (
-    <Text variant={'text-poppins'}>{title}</Text>
-  )
-}
 export const CustomAccordion = ({ children, date, title }) => {
+  const [isLargerThan445] = useMediaQuery('(min-width: 445px)')
   return (
-    <AccordionItem m={4}>
+    <AccordionItem my={4}>
       <AccordionButton>
         <Box display={'flex'} w={'100%'} justifyContent={'space-between'}>
-          {FlexText(date, title)}
+          {isLargerThan445 ? (
+            <>
+              <Text variant={'text-poppins'}>{title}</Text>
+              <Text variant={'text-poppins'}>{date}</Text>
+            </>
+          ) : (
+            <Text variant={'text-poppins'}>{title}</Text>
+          )}
         </Box>
         <AccordionIcon />
       </AccordionButton>
 
       <AccordionPanel mt={4}>{children}</AccordionPanel>
     </AccordionItem>
-  )
-}
-function FlexPannel(location, link, content, tag) {
-  const [isLargerThan400] = useMediaQuery('(min-width: 445px)')
-
-  return isLargerThan400 ? (
-    <Grid templateColumns='repeat(2, 370px)' gap={6}>
-      <Box>
-        <Box display={'flex'}>
-          <Box display={'flex'} alignItems={'center'} mr={'10px'}>
-            <Icon as={IoLocationSharp} />
-            <Text variant={'text-roboto'} pl={2}>
-              {location}
-            </Text>
-          </Box>
-          <Box display={'flex'} alignItems={'center'} mx={'10px'}>
-            <LinkIcon color={"linksColor"} />
-            <Link variant={'text-roboto'} pl={2}>
-              {link}
-            </Link>
-          </Box>
-        </Box>
-        <Text my={'12px'}>{content}</Text>
-        <HStack spacing={2}>
-          <Tag
-            size={'lg'}
-            borderRadius="full"
-            variant="solid"
-            background="#654329"
-          >
-            <TagLabel overflow={'initial'}>{tag}</TagLabel>
-          </Tag>
-          <Tag
-            size={'lg'}
-            borderRadius="full"
-            variant="solid"
-            background="#654329"
-          >
-            <TagLabel overflow={'initial'}>{tag}</TagLabel>
-          </Tag>
-        </HStack>
-      </Box>
-      <Box p={'10px'}>
-        <Image width={'105px'} maxW={'100%'} src="images/no-result.png" />
-      </Box>
-    </Grid>
-  ) : (
-    <Box display={'flex'}>
-      <Box>
-        <Box display={'flex'} flexDirection={'column'}>
-          <Box display={'flex'} alignItems={'center'}>
-            <Icon as={IoLocationSharp} />
-            <Text variant={'text-roboto'} pl={2}>
-              {location}
-            </Text>
-          </Box>
-          <Box display={'flex'} alignItems={'center'} mt={'10px'}>
-            <LinkIcon color={"linksColor"}/>
-            <Link fontSize={'xs'} variant={'text-roboto'} pl={2}>
-              {link}
-            </Link>
-          </Box>
-        </Box>
-        <Text my={'12px'}>{content}</Text>
-        <HStack spacing={2}>
-          <Tag
-            size={'lg'}
-            borderRadius="full"
-            variant="solid"
-            background="#654329"
-          >
-            <TagLabel overflow={'initial'}>{tag}</TagLabel>
-          </Tag>
-          <Tag
-            size={'lg'}
-            borderRadius="full"
-            variant="solid"
-            background="#654329"
-          >
-            <TagLabel overflow={'initial'}>{tag}</TagLabel>
-          </Tag>
-        </HStack>
-      </Box>
-    </Box>
   )
 }
 
@@ -135,10 +47,67 @@ export const CustomPannel = ({
   Bottomdivider,
   content,
   tag,
+  src,
 }) => {
+  const [isLargerThan430] = useMediaQuery('(min-width: 430px)')
+  const [isLargerThan600] = useMediaQuery('(min-width: 600px)')
+  const GridWrapper = ({ children }) => {
+    console.log(src)
+    return isLargerThan600 ? (
+      <Grid templateColumns=" 75% 25%" gap={6}>
+        {children}
+        <Box alignItems={'center'} display={'flex'} pt={'10px'} maxW={'105px'}>
+          <Image borderRadius={"12px"} maxW={'100%'} src={'images/' + src} />
+        </Box>
+      </Grid>
+    ) : (
+      <Box>{children}</Box>
+    )
+  }
+
   return (
     <>
-      {FlexPannel(location, link, content, tag)}
+      <GridWrapper>
+        <Box>
+          <Box display={'flex'}>
+            <Box display={'flex'} alignItems={'center'} mr={'10px'}>
+              <Icon as={IoLocationSharp} />
+              <Text
+                fontSize={isLargerThan430 ? undefined : '12px'}
+                variant={'text-roboto'}
+                pl={2}
+              >
+                {location}
+              </Text>
+            </Box>
+            <Box display={'flex'} alignItems={'center'} mx={'10px'}>
+              <LinkIcon color={'linksColor'} />
+
+              <Link
+                fontSize={isLargerThan430 ? undefined : '12px'}
+                variant={'text-roboto'}
+                pl={2}
+              >
+                {link}
+              </Link>
+            </Box>
+          </Box>
+          <Text my={'12px'}>{content}</Text>
+          <HStack spacing={2}>
+            {tag?.map((tag) => (
+              <Tag
+                key={tag}
+                size={'lg'}
+                borderRadius="full"
+                variant="solid"
+                background="#654329"
+              >
+                <TagLabel overflow={'initial'}>{tag}</TagLabel>
+              </Tag>
+            ))}
+          </HStack>
+        </Box>
+      </GridWrapper>
       {Bottomdivider ? (
         <Box justifyContent={'center'} display={'flex'}>
           <Divider w={'90%'} my={'15px'} />
