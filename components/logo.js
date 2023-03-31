@@ -32,7 +32,7 @@ const Logo = () => {
           <Text color="#fbf8eb" fontFamily="Roboto Mono" fontSize={24}>
             .
           </Text>
-          <Text color="#9c5b2b" fontFamily="Roboto Mono" fontSize={24}>
+          <Text color="#da570b" fontFamily="Roboto Mono" fontSize={24}>
             _
           </Text>
         </LogoBox>

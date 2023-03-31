@@ -7,25 +7,23 @@ import {
   List,
   ListItem,
   Accordion,
-  AccordionButton,
-  AccordionIcon,
-  AccordionItem,
-  AccordionPanel,
-  IconButton,
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-
 import Paragraph from '../components/paragraph'
+import { CustomAccordion, CustomPannel } from '../components/accordion'
 
-import { ChevronRightIcon } from '@chakra-ui/icons'
-import { IoLogoGithub } from 'react-icons/io5'
+import {
+  IoLogoGithub,
+  IoLogoLinkedin,
+  IoDownloadOutline,
+} from 'react-icons/io5'
 
 const Page = () => {
   return (
     <Layout>
-      <Container
+      <Box
         display={'flex'}
         justifyItems={'center'}
         alignItems={'center'}
@@ -49,18 +47,18 @@ const Page = () => {
           fontSize={[14, 14, 22]}
           textAlign="center"
         >
-          FRONT END, APP DEVELOPER & DESIGNER
+          {'FRONT END, APP DEVELOPER & DESIGNER'}
         </Heading>{' '}
-        <Container pt={16} maxW="container.sm">
+        <Box pt={16} maxW="container.sm">
           <Section delay={0.1}>
             <Heading as="h3" variant="section-title">
-              Work
+              About
             </Heading>
             <Paragraph>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea{' '}
+              nisi ut aliquip ex ea&nbsp;
               <Link as={NextLink} href="" passHref scroll={false}>
                 commodo
               </Link>
@@ -77,152 +75,60 @@ const Page = () => {
                 as={NextLink}
                 href="/works"
                 scroll={false}
-                rightIcon={<ChevronRightIcon />}
+                rightIcon={<IoDownloadOutline />}
               >
-                My portfolio
+                Curriculum Vitae
               </Button>
             </Box>
           </Section>
 
           <Section delay={0.3}>
             <Heading as="h3" variant="section-title">
-              Bio
+              Me in accordion
             </Heading>
-            <Box pt={2} position="relative">
-              {/* ********************************************* */}
-              <Accordion allowToggle>
-                <AccordionItem m={4}>
-                  <AccordionButton>
-                    <Box flex="1" textAlign="left">
-                      Titre Section 1
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-
-                  <AccordionPanel mt={4}>Hello</AccordionPanel>
-                </AccordionItem>
-                <AccordionItem m={4}>
-                  <AccordionButton>
-                    <Box flex="1" textAlign="left">
-                      Titre Section 2
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-
-                  <AccordionPanel mt={4}>Hello</AccordionPanel>
-                </AccordionItem>
-                <AccordionItem m={4}>
-                  <AccordionButton>
-                    <Box flex="1" textAlign="left">
-                      Titre Section 3
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-
-                  <AccordionPanel mt={4}>Hello</AccordionPanel>
-                </AccordionItem>
+            <Box position="relative">
+              <Accordion variant={'orange'} allowToggle>
+                <CustomAccordion
+                  title={'Experience'}
+                  date={'Date - Date'}
+                >
+                  <CustomPannel
+                    location={'Paris'}
+                    link={'agence-belle-epoque.fr'}
+                    content={
+                      'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+                    }
+                    tag={['holla', 'miam']}
+                    src={'belleEpoque.jpg'}
+                    Bottomdivider={true}
+                  />
+                  <CustomPannel
+                    location={'Paris'}
+                    link={'korper.io'}
+                    content={
+                      'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.'
+                    }
+                    tag={["como","està"]}
+                    src={'korper.png'}
+                  />
+                </CustomAccordion>
+                <CustomAccordion
+                  title={'Education'}
+                  date={'Date - Date'}
+                >
+                  <CustomPannel
+                    location={'Location'}
+                    link={'This-website.com'}
+                  />
+                </CustomAccordion>
               </Accordion>
-              <Accordion variant={'blue'} allowToggle>
-                <AccordionItem m={4}>
-                  <AccordionButton>
-                    <Box flex="1" textAlign="left">
-                      Titre Section 1
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-
-                  <AccordionPanel mt={4}>Hello</AccordionPanel>
-                </AccordionItem>
-                <AccordionItem m={4}>
-                  <AccordionButton>
-                    <Box flex="1" textAlign="left">
-                      Titre Section 2
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-
-                  <AccordionPanel mt={4}>Hello</AccordionPanel>
-                </AccordionItem>
-                <AccordionItem m={4}>
-                  <AccordionButton>
-                    <Box flex="1" textAlign="left">
-                      Titre Section 3
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-
-                  <AccordionPanel mt={4}>Hello</AccordionPanel>
-                </AccordionItem>
-              </Accordion>
-              <Accordion variant={'green'} allowToggle>
-                <AccordionItem m={4}>
-                  <AccordionButton>
-                    <Box flex="1" textAlign="left">
-                      Titre Section 1
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-
-                  <AccordionPanel mt={4}>Hello</AccordionPanel>
-                </AccordionItem>
-                <AccordionItem m={4}>
-                  <AccordionButton>
-                    <Box flex="1" textAlign="left">
-                      Titre Section 2
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-
-                  <AccordionPanel mt={4}>Hello</AccordionPanel>
-                </AccordionItem>
-                <AccordionItem m={4}>
-                  <AccordionButton>
-                    <Box flex="1" textAlign="left">
-                      Titre Section 3
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-
-                  <AccordionPanel mt={4}>Hello</AccordionPanel>
-                </AccordionItem>
-                
-              </Accordion>
-
-              <Accordion variant={'purple'} allowToggle>
-                <AccordionItem m={4}>
-                  <AccordionButton>
-                    <Box flex="1" textAlign="left">
-                      Titre Section 1
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-
-                  <AccordionPanel mt={4}>Hello</AccordionPanel>
-                </AccordionItem>
-                <AccordionItem m={4}>
-                  <AccordionButton>
-                    <Box flex="1" textAlign="left">
-                      Titre Section 2
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-
-                  <AccordionPanel mt={4}>Hello</AccordionPanel>
-                </AccordionItem>
-                <AccordionItem m={4}>
-                  <AccordionButton>
-                    <Box flex="1" textAlign="left">
-                      Titre Section 3
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-
-                  <AccordionPanel mt={4}>Hello</AccordionPanel>
-                </AccordionItem>
-                
-              </Accordion>
-              {/* ********************************************* */}
             </Box>
+          </Section>
+
+          <Section delay={0.6}>
+            <Heading as="h3" variant="section-title">
+              Some projects
+            </Heading>
           </Section>
 
           <Section delay={0.6}>
@@ -230,17 +136,25 @@ const Page = () => {
               On the web
             </Heading>
             <List>
-              <ListItem>
+              <ListItem display={'flex'} flexDirection={'column'}>
                 <Link href="https://github.com/UnitIgris" target="_blank">
                   <Button variant="ghost" leftIcon={<IoLogoGithub />}>
                     @UnitIgris
                   </Button>
                 </Link>
+                <Link
+                  href="https://linkedin.com/in/samuel-lunion/"
+                  target="_blank"
+                >
+                  <Button variant="ghost" leftIcon={<IoLogoLinkedin />}>
+                    Samuel Luinon
+                  </Button>
+                </Link>
               </ListItem>
             </List>
           </Section>
-        </Container>
-      </Container>
+        </Box>
+      </Box>
     </Layout>
   )
 }

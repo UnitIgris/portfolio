@@ -22,10 +22,10 @@ const Main = ({ children, router }) => {
 
       <Navbar path={router.asPath} />
 
-      <Container maxW="container.2xl" pt={[24, 28, 36]}>
+      <Box p={6} maxW="container.2xl" pt={[24, 28, 36]}>
         <LazyVoxelRoom />
         {children}
-      </Container>
+      </Box>
     </Box>
   )
 }

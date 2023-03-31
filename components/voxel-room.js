@@ -63,12 +63,12 @@ const VoxelRoom = () => {
 
       //Control Camera
       const controls = new OrbitControls(camera, renderer.domElement)
-     
+
       controls.target = target
       controls.maxZoom = 2
       controls.minZoom = 1
 
-      loadGLTFModel(scene, 'RoomUVProNOPlantV2.glb', {}).then(() => {
+      loadGLTFModel(scene, '3Droom/RoomUVProNOPlantV2.glb', {}).then(() => {
         animate()
         setLoading(false)
       })
