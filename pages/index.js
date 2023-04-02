@@ -12,7 +12,11 @@ import NextLink from 'next/link'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
-import { CustomAccordion, CustomPannel } from '../components/accordion'
+import {
+  CustomAccordion,
+  CustomPannelEdu,
+  CustomPannelExp,
+} from '../components/accordion'
 
 import {
   IoLogoGithub,
@@ -88,37 +92,50 @@ const Page = () => {
             </Heading>
             <Box position="relative">
               <Accordion variant={'orange'} allowToggle>
-                <CustomAccordion
-                  title={'Experience'}
-                  date={'Date - Date'}
-                >
-                  <CustomPannel
-                    location={'Paris'}
+                <CustomAccordion title={'Experience'}>
+                  <CustomPannelExp
+                    poste={'Software Engineer'}
+                    link={'korper.io'}
+                    content={
+                      'Developing front-end solution on React/Next.js and Electron framework.'
+                    }
+                    tag={['Javascript', 'React', 'NextJS', 'Electron']}
+                    src={'korper.png'}
+                    Bottomdivider={true}
+                  />
+                  <CustomPannelExp
+                    poste={'Web Developer'}
                     link={'agence-belle-epoque.fr'}
                     content={
                       'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
                     }
-                    tag={['holla', 'miam']}
+                    tag={['TypeScript', 'React', 'NextJS', 'Firebase']}
                     src={'belleEpoque.jpg'}
-                    Bottomdivider={true}
-                  />
-                  <CustomPannel
-                    location={'Paris'}
-                    link={'korper.io'}
-                    content={
-                      'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.'
-                    }
-                    tag={["como","està"]}
-                    src={'korper.png'}
                   />
                 </CustomAccordion>
-                <CustomAccordion
-                  title={'Education'}
-                  date={'Date - Date'}
-                >
-                  <CustomPannel
-                    location={'Location'}
-                    link={'This-website.com'}
+                <CustomAccordion title={'Education'}>
+                  <CustomPannelEdu
+                    dates={['2023', '2022']}
+                    content={
+                      "Bachelor's Degree in Web Development\n (3rd year)"
+                    }
+                    link={'Hetic'}
+                    src={'hetic.png'}
+                    Bottomdivider={true}
+                  />
+                  <CustomPannelEdu
+                    dates={['2022', '2020']}
+                    content={"Bachelor's Degree in Computer Science"}
+                    link={'Paris DesCartes'}
+                    src={'descartes.png'}
+                    Bottomdivider={true}
+                  />
+                  <CustomPannelEdu
+                    dates={['2020', '2016']}
+                    content={"Baccalauréat Economique & social"}
+                    link={"Droits de l'homme"}
+                    src={'ddh.png'}
+                    
                   />
                 </CustomAccordion>
               </Accordion>
