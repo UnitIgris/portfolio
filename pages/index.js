@@ -1,5 +1,4 @@
 import {
-  Container,
   Box,
   Button,
   Heading,
@@ -7,6 +6,7 @@ import {
   List,
   ListItem,
   Accordion,
+  SimpleGrid,
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import Layout from '../components/layouts/article'
@@ -17,11 +17,12 @@ import {
   CustomPannelEdu,
   CustomPannelExp,
 } from '../components/accordion'
-
+import { GridItem } from '../components/grid-item'
 import {
   IoLogoGithub,
   IoLogoLinkedin,
   IoDownloadOutline,
+  IoChevronForward,
 } from 'react-icons/io5'
 
 const Page = () => {
@@ -77,7 +78,8 @@ const Page = () => {
             <Box align="center" my={4}>
               <Button
                 as={NextLink}
-                href="/works"
+                target="_blank"
+                href="./Lunion_Samuel_CV.pdf"
                 scroll={false}
                 rightIcon={<IoDownloadOutline />}
               >
@@ -132,10 +134,9 @@ const Page = () => {
                   />
                   <CustomPannelEdu
                     dates={['2020', '2016']}
-                    content={"Baccalauréat Economique & social"}
+                    content={'Baccalauréat Economique & social'}
                     link={"Droits de l'homme"}
                     src={'ddh.png'}
-                    
                   />
                 </CustomAccordion>
               </Accordion>
@@ -146,6 +147,48 @@ const Page = () => {
             <Heading as="h3" variant="section-title">
               Some projects
             </Heading>
+            <SimpleGrid columns={[1, 2, 2]} gap={6}>
+              <GridItem
+                title="Dev is a fun thing"
+                thumbnail={'./images/noon.jpg'}
+                href="error"
+              >
+                This is a cool work
+              </GridItem>
+              <GridItem
+                title="Dev is a fun thing"
+                thumbnail={'./images/noon.jpg'}
+                href="error"
+              >
+                This is a cool work
+              </GridItem>
+              <GridItem
+                title="Dev is a fun thing"
+                thumbnail={'./images/noon.jpg'}
+                href="error"
+              >
+                This is a cool work
+              </GridItem>
+              <GridItem
+                title="Dev is a fun thing"
+                thumbnail={'./images/noon.jpg'}
+                href="error"
+              >
+                This is a cool work
+              </GridItem>
+            </SimpleGrid>
+            <Box align="center" my={4}>
+              <Button
+                variant="outline"
+                as={NextLink}
+                target="_blank"
+                href="error"
+                scroll={false}
+                rightIcon={<IoChevronForward />}
+              >
+                See more
+              </Button>
+            </Box>
           </Section>
 
           <Section delay={0.6}>
