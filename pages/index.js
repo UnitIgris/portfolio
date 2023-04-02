@@ -134,8 +134,8 @@ const Page = () => {
                   />
                   <CustomPannelEdu
                     dates={['2020', '2016']}
-                    content={'Baccalauréat Economique & social'}
-                    link={"Droits de l'homme"}
+                    content={'Baccalauréat Economique & Social'}
+                    link={"Droits de l'Homme"}
                     src={'ddh.png'}
                   />
                 </CustomAccordion>
