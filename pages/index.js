@@ -147,7 +147,7 @@ const Page = () => {
             <Heading as="h3" variant="section-title">
               Some projects
             </Heading>
-            <SimpleGrid columns={[1, 2, 2]} gap={6}>
+            <SimpleGrid columns={[1, 2, 2]} gap={1}>
               <GridItem
                 title="Dev is a fun thing"
                 thumbnail={'./images/noon.jpg'}
@@ -181,7 +181,6 @@ const Page = () => {
               <Button
                 variant="outline"
                 as={NextLink}
-                target="_blank"
                 href="error"
                 scroll={false}
                 rightIcon={<IoChevronForward />}
