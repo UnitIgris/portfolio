@@ -92,7 +92,7 @@ const Page = () => {
             <Heading as="h3" variant="section-title">
               Me in accordion
             </Heading>
-            <Box position="relative">
+            <Box > 
               <Accordion variant={'orange'} allowToggle>
                 <CustomAccordion title={'Experience'}>
                   <CustomPannelExp
@@ -151,7 +151,7 @@ const Page = () => {
               <GridItem
                 title="Dev is a fun thing"
                 thumbnail={'./images/noon.jpg'}
-                href="error"
+                href="works"
               >
                 This is a cool work
               </GridItem>
@@ -181,7 +181,7 @@ const Page = () => {
               <Button
                 variant="outline"
                 as={NextLink}
-                href="error"
+                href="works"
                 scroll={false}
                 rightIcon={<IoChevronForward />}
               >
