@@ -17,10 +17,10 @@ export const RoomContainer = forwardRef(({ children }, ref) => (
     ref={ref}
     className="voxel-room"
     m="auto"
-    mt={['-20px', '-60px', '-120px']}
-    mb={['-120px', '-220px', '-300px']}
-    w={[240, 480, 680]}
-    h={[240, 480, 680]}
+    mt={['-20px', '-60px', '-80px']}
+    mb={['-120px', '-220px', '-260px']}
+    w={[240, 480, 600]}
+    h={[240, 480, 600]}
     position="relative"
   >
     {children}

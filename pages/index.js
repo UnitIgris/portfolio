@@ -92,7 +92,7 @@ const Page = () => {
             <Heading as="h3" variant="section-title">
               Me in accordion
             </Heading>
-            <Box position="relative">
+            <Box > 
               <Accordion variant={'orange'} allowToggle>
                 <CustomAccordion title={'Experience'}>
                   <CustomPannelExp
@@ -134,8 +134,8 @@ const Page = () => {
                   />
                   <CustomPannelEdu
                     dates={['2020', '2016']}
-                    content={'Baccalauréat Economique & social'}
-                    link={"Droits de l'homme"}
+                    content={'Baccalauréat Economique & Social'}
+                    link={"Droits de l'Homme"}
                     src={'ddh.png'}
                   />
                 </CustomAccordion>
@@ -147,11 +147,11 @@ const Page = () => {
             <Heading as="h3" variant="section-title">
               Some projects
             </Heading>
-            <SimpleGrid columns={[1, 2, 2]} gap={6}>
+            <SimpleGrid columns={[1, 2, 2]} gap={1}>
               <GridItem
                 title="Dev is a fun thing"
                 thumbnail={'./images/noon.jpg'}
-                href="error"
+                href="works"
               >
                 This is a cool work
               </GridItem>
@@ -181,8 +181,7 @@ const Page = () => {
               <Button
                 variant="outline"
                 as={NextLink}
-                target="_blank"
-                href="error"
+                href="works"
                 scroll={false}
                 rightIcon={<IoChevronForward />}
               >
