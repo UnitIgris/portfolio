@@ -21,7 +21,7 @@ export const RoomContainer = forwardRef(({ children }, ref) => (
     mb={['-120px', '-220px', '-260px']}
     w={[240, 480, 600]}
     h={[240, 480, 600]}
-    //position="relative"
+    position="relative"
   >
     {children}
   </Box>
