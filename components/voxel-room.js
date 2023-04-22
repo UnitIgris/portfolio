@@ -68,7 +68,7 @@ const VoxelRoom = () => {
       controls.maxZoom = 2
       controls.minZoom = 1
 
-      loadGLTFModel(scene, '3Droom/RoomUVProNOPlantV2.glb', {}).then(() => {
+      loadGLTFModel(scene, '/3Droom/RoomUVProNOPlantV2.glb', {}).then(() => {
         animate()
         setLoading(false)
       })
@@ -92,6 +92,13 @@ const VoxelRoom = () => {
           camera.lookAt(target)
         } else {
           controls.update()
+
+          controls.autoRotate = true
+          if (camera.position.x < -16 && camera.position.z > 12)
+            controls.autoRotateSpeed = 100
+          if (camera.position.x > 16 && camera.position.z > -12)
+            controls.autoRotateSpeed = 2
+         controls.maxPolarAngle=THREE.MathUtils.degToRad(90 - 2);
         }
 
         renderer.render(scene, camera)

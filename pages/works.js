@@ -1,4 +1,6 @@
 import Section from '../components/section'
+import { useLayoutEffect } from 'react'
+
 import {
   Container,
   Heading,
@@ -38,9 +40,11 @@ const WorkGridItem = ({ children, id, title, thumbnail }) => (
 )
 
 const Works = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
-    <Layout title={"Works"}>
-      
+    <Layout title={'Works'}>
       <Container marginTop={'80px'}>
         <Heading as={'h3'} fontSize={'20'} mb={4}>
           Works
@@ -48,81 +52,52 @@ const Works = () => {
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section>
             <WorkGridItem
-              id="inkdrop"
+              id="korper"
               thumbnail={'./images/noon.jpg'}
-              title="Inkdrop"
+              title="Korper"
             >
-              A Markdown note-taking app with 100+ plugins, cross-platform and
-              encrypted data sync support
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium.
             </WorkGridItem>
           </Section>
           <Section>
             <WorkGridItem
-              id="walknote"
-              title="walknote"
+              id="korper"
               thumbnail={'./images/noon.jpg'}
+              title="Korper"
             >
-              Music recommendation app for iOS
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium.
             </WorkGridItem>
           </Section>
-
-          <Section delay={0.1}>
+          <Section>
             <WorkGridItem
-              id="fourpainters"
+              id="korper"
               thumbnail={'./images/noon.jpg'}
-              title="The four painters"
+              title="Korper"
             >
-              A video work generated with deep learning, imitating famous four
-              painters like Van Gogh
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium.
             </WorkGridItem>
           </Section>
-          <Section delay={0.1}>
+          <Section>
             <WorkGridItem
-              id="menkiki"
+              id="korper"
               thumbnail={'./images/noon.jpg'}
-              title="Menkiki"
+              title="Korper"
             >
-              An app that suggests ramen(noodle) shops based on a given photo of
-              the ramen you want to eat
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium.
             </WorkGridItem>
           </Section>
-        </SimpleGrid>
-
-        <Section delay={0.2}>
-          <Divider my={6} />
-
-          <Heading as="h3" fontSize={20} mb={4}>
-            Collaborations
-          </Heading>
-        </Section>
-
-        <SimpleGrid columns={[1, 1, 2]} gap={6}>
-          <Section delay={0.3}>
+          <Section>
             <WorkGridItem
-              id="margelo"
+              id="korper"
               thumbnail={'./images/noon.jpg'}
-              title="Margelo"
+              title="Korper"
             >
-              A website of the elite app development and contracting agency
-              based in Austria
-            </WorkGridItem>
-          </Section>
-          <Section delay={0.3}>
-            <WorkGridItem
-              id="modetokyo"
-              thumbnail={'./images/noon.jpg'}
-              title="mode.tokyo"
-            >
-              The mode magazine for understanding to personally enjoy Japan
-            </WorkGridItem>
-          </Section>
-          <Section delay={0.3}>
-            <WorkGridItem
-              id="styly"
-              thumbnail={'./images/noon.jpg'}
-              title="Styly"
-            >
-              A VR Creative tools for fashion brands
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium.
             </WorkGridItem>
           </Section>
         </SimpleGrid>
@@ -136,32 +111,54 @@ const Works = () => {
         </Section>
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
-          <Section delay={0.5}>
+          <Section>
             <WorkGridItem
-              id="pichu2"
+              id="korper"
               thumbnail={'./images/noon.jpg'}
-              title="Pichu*Pichu"
+              title="Korper"
             >
-              Twitter client app for iPhone Safari
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium.
             </WorkGridItem>
           </Section>
-          <Section delay={0.5}>
+          <Section>
             <WorkGridItem
-              id="freedbtagger"
+              id="korper"
               thumbnail={'./images/noon.jpg'}
-              title="freeDBTagger"
+              title="Korper"
             >
-              Automatic audio file tagging tool using FreeDB for Windows
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium.
             </WorkGridItem>
           </Section>
-          <Section delay={0.6}>
+          <Section>
             <WorkGridItem
-              id="amembo"
+              id="korper"
               thumbnail={'./images/noon.jpg'}
-              title="Amembo"
+              title="Korper"
             >
-              P2P private file sharing tool with MSN Messenger integration for
-              Windows
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium.
+            </WorkGridItem>
+          </Section>
+          <Section>
+            <WorkGridItem
+              id="korper"
+              thumbnail={'./images/noon.jpg'}
+              title="Korper"
+            >
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium.
+            </WorkGridItem>
+          </Section>
+          <Section>
+            <WorkGridItem
+              id="korper"
+              thumbnail={'./images/noon.jpg'}
+              title="Korper"
+            >
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium.
             </WorkGridItem>
           </Section>
         </SimpleGrid>
