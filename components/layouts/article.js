@@ -1,7 +1,11 @@
 import { motion } from 'framer-motion'
 import Head from 'next/head'
+import { useLayoutEffect } from 'react'
 
 const Layout = ({ children, title }) => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   const t = `${title} - Samuel Lunion`
   return (
     <motion.article

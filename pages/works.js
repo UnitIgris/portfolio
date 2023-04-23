@@ -1,104 +1,65 @@
 import Section from '../components/section'
-import { useLayoutEffect } from 'react'
-
-import {
-  Container,
-  Heading,
-  SimpleGrid,
-  Divider,
-  Box,
-  Text,
-  LinkBox,
-  LinkOverlay,
-  Image,
-} from '@chakra-ui/react'
-import NextLink from 'next/link'
+import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
+import { GridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
 
-const WorkGridItem = ({ children, id, title, thumbnail }) => (
-  <Box w="100%" textAlign="center">
-    <LinkBox
-      as={NextLink}
-      href={`/works/${id}`}
-      scroll={false}
-      cursor="pointer"
-    >
-      <Image
-        src={thumbnail}
-        alt={title}
-        className="grid-item-thumbnail"
-        placeholder="blur"
-      />
-      <LinkOverlay as="div" href={`/works/${id}`}>
-        <Text mt={2} fontSize={20}>
-          {title}
-        </Text>
-      </LinkOverlay>
-      <Text fontSize={14}>{children}</Text>
-    </LinkBox>
-  </Box>
-)
-
 const Works = () => {
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
   return (
     <Layout title={'Works'}>
       <Container marginTop={'80px'}>
         <Heading as={'h3'} variant="section-title" fontSize={'20'} mb={4}>
           Works
         </Heading>
-        <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <SimpleGrid columns={[1, 1, 2]} gap={1}>
           <Section>
-            <WorkGridItem
+            <GridItem
               id="korper"
               thumbnail={'./images/noon.jpg'}
               title="Korper"
             >
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium.
-            </WorkGridItem>
+            </GridItem>
           </Section>
           <Section>
-            <WorkGridItem
+            <GridItem
               id="korper"
               thumbnail={'./images/noon.jpg'}
               title="Korper"
             >
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium.
-            </WorkGridItem>
+            </GridItem>
           </Section>
           <Section>
-            <WorkGridItem
+            <GridItem
               id="korper"
               thumbnail={'./images/noon.jpg'}
               title="Korper"
             >
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium.
-            </WorkGridItem>
+            </GridItem>
           </Section>
           <Section>
-            <WorkGridItem
+            <GridItem
               id="korper"
               thumbnail={'./images/noon.jpg'}
               title="Korper"
             >
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium.
-            </WorkGridItem>
+            </GridItem>
           </Section>
           <Section>
-            <WorkGridItem
+            <GridItem
               id="korper"
               thumbnail={'./images/noon.jpg'}
               title="Korper"
             >
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium.
-            </WorkGridItem>
+            </GridItem>
           </Section>
         </SimpleGrid>
 
@@ -112,54 +73,54 @@ const Works = () => {
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section>
-            <WorkGridItem
+            <GridItem
               id="korper"
               thumbnail={'./images/noon.jpg'}
               title="Korper"
             >
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium.
-            </WorkGridItem>
+            </GridItem>
           </Section>
           <Section>
-            <WorkGridItem
+            <GridItem
               id="korper"
               thumbnail={'./images/noon.jpg'}
               title="Korper"
             >
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium.
-            </WorkGridItem>
+            </GridItem>
           </Section>
           <Section>
-            <WorkGridItem
+            <GridItem
               id="korper"
               thumbnail={'./images/noon.jpg'}
               title="Korper"
             >
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium.
-            </WorkGridItem>
+            </GridItem>
           </Section>
           <Section>
-            <WorkGridItem
+            <GridItem
               id="korper"
               thumbnail={'./images/noon.jpg'}
               title="Korper"
             >
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium.
-            </WorkGridItem>
+            </GridItem>
           </Section>
           <Section>
-            <WorkGridItem
+            <GridItem
               id="korper"
               thumbnail={'./images/noon.jpg'}
               title="Korper"
             >
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium.
-            </WorkGridItem>
+            </GridItem>
           </Section>
         </SimpleGrid>
       </Container>
