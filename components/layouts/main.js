@@ -19,10 +19,11 @@ const Main = ({ children, router }) => {
         />
         <title>Samuel Lunion - Homepage</title>
       </Head>
-
       <Navbar path={router.asPath} />
 
-      <Box p={6} maxW="container.2xl" pt={[24, 28, 36]}>
+      {/* maxW="container.2xl" */}
+      
+      <Box p={6} pt={[24, 28, 36]}>
         <LazyVoxelRoom />
         {children}
       </Box>

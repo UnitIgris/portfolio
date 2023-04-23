@@ -92,7 +92,7 @@ const Page = () => {
             <Heading as="h3" variant="section-title">
               Me in accordion
             </Heading>
-            <Box > 
+            <Box>
               <Accordion variant={'orange'} allowToggle>
                 <CustomAccordion title={'Experience'}>
                   <CustomPannelExp
@@ -151,28 +151,28 @@ const Page = () => {
               <GridItem
                 title="Dev is a fun thing"
                 thumbnail={'./images/noon.jpg'}
-                href="works"
+                id="korper"
               >
                 This is a cool work
               </GridItem>
               <GridItem
                 title="Dev is a fun thing"
                 thumbnail={'./images/noon.jpg'}
-                href="error"
+                id="korper"
               >
                 This is a cool work
               </GridItem>
               <GridItem
                 title="Dev is a fun thing"
                 thumbnail={'./images/noon.jpg'}
-                href="error"
+                id="korper"
               >
                 This is a cool work
               </GridItem>
               <GridItem
                 title="Dev is a fun thing"
                 thumbnail={'./images/noon.jpg'}
-                href="error"
+                id="korper"
               >
                 This is a cool work
               </GridItem>
