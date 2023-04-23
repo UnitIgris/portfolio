@@ -98,7 +98,7 @@ const VoxelRoom = () => {
             controls.autoRotateSpeed = 100
           if (camera.position.x > 16 && camera.position.z > -12)
             controls.autoRotateSpeed = 2
-         controls.maxPolarAngle=THREE.MathUtils.degToRad(90 - 2);
+         controls.maxPolarAngle=THREE.MathUtils.degToRad(90 - 2 );
         }
 
         renderer.render(scene, camera)
