@@ -68,7 +68,7 @@ const VoxelRoom = () => {
       controls.maxZoom = 2
       controls.minZoom = 1
 
-      loadGLTFModel(scene, 'https://korper-storage.s3.eu-west-3.amazonaws.com/RoomUVProNOPlantV2.glb', {}).then(() => {
+      loadGLTFModel(scene, '/3Droom/RoomUVProNOPlantV2.glb', {}).then(() => {
         animate()
         setLoading(false)
       })
