@@ -109,7 +109,7 @@ const Page = () => {
                     poste={'Web Developer'}
                     link={'agence-belle-epoque.fr'}
                     content={
-                      'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+                      'Incorporation of components, onboarding flow development, and homepage design.'
                     }
                     tag={['TypeScript', 'React', 'NextJS', 'Firebase']}
                     src={'belleEpoque.jpg'}
@@ -155,34 +155,25 @@ const Page = () => {
             <Heading as="h3" variant="section-title">
               Some projects
             </Heading>
-            <SimpleGrid columns={[1, 2, 3]} gap={1}>
+            <SimpleGrid columns={[2, 2, 3]} gap={3}>
               <GridItem
-                title="Dev is a fun thing"
-                thumbnail={'./images/noon.jpg'}
                 id="korper"
+                thumbnail={'./images/project/card/korper.png'}
+                title="Korper"
               >
-                This is a cool work
               </GridItem>
               <GridItem
-                title="Dev is a fun thing"
-                thumbnail={'./images/noon.jpg'}
-                id="korper"
+                id="belleEpoque"
+                thumbnail={'./images/project/card/belleEpoque.png'}
+                title="Belle Epoque"
+                dark
               >
-                This is a cool work
               </GridItem>
               <GridItem
-                title="Dev is a fun thing"
-                thumbnail={'./images/noon.jpg'}
-                id="korper"
+                id="acushen"
+                thumbnail={'./images/project/card/acushen.png'}
+                title="Acushen Gwada"
               >
-                This is a cool work
-              </GridItem>
-              <GridItem
-                title="Dev is a fun thing"
-                thumbnail={'./images/noon.jpg'}
-                id="korper"
-              >
-                This is a cool work
               </GridItem>
             </SimpleGrid>
             <Box align="center" my={4}>

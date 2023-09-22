@@ -6,54 +6,17 @@ import Layout from '../components/layouts/article'
 const Works = () => {
   return (
     <Layout title={'Works'}>
-      <Container marginTop={'80px'}>
+      <Container className='work-container' marginTop={'80px'}>
         <Heading as={'h3'} variant="section-title" fontSize={'20'} mb={4}>
           Works
         </Heading>
-        <SimpleGrid columns={[1, 2, 3]} gap={4}>
+        <SimpleGrid columns={[2, 2, 3]} gap={3}>
           <Section>
             <GridItem
               id="korper"
               thumbnail={'./images/project/card/ER.jpg'}
               title="Korper"
             >
-             
-            </GridItem>
-          </Section>
-          <Section>
-            <GridItem
-              id="korper"
-              thumbnail={'./images/project/card/ER.jpg'}
-              title="Korper"
-            >
-              
-            </GridItem>
-          </Section>
-          <Section>
-            <GridItem
-              id="korper"
-              thumbnail={'./images/project/card/ER.jpg'}
-              title="Korper"
-            >
-              
-            </GridItem>
-          </Section>
-          <Section>
-            <GridItem
-              id="korper"
-              thumbnail={'./images/project/card/ER.jpg'}
-              title="Korper"
-            >
-              
-            </GridItem>
-          </Section>
-          <Section>
-            <GridItem
-              id="korper"
-              thumbnail={'./images/project/card/ER.jpg'}
-              title="Korper"
-            >
-              
             </GridItem>
           </Section>
         </SimpleGrid>
