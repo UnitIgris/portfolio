@@ -10,60 +10,55 @@ const Works = () => {
         <Heading as={'h3'} variant="section-title" fontSize={'20'} mb={4}>
           Works
         </Heading>
-        <SimpleGrid columns={[1, 1, 2]} gap={1}>
+        <SimpleGrid columns={[1, 2, 3]} gap={4}>
           <Section>
             <GridItem
               id="korper"
-              thumbnail={'./images/noon.jpg'}
+              thumbnail={'./images/project/card/ER.jpg'}
               title="Korper"
             >
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium.
+             
             </GridItem>
           </Section>
           <Section>
             <GridItem
               id="korper"
-              thumbnail={'./images/noon.jpg'}
+              thumbnail={'./images/project/card/ER.jpg'}
               title="Korper"
             >
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium.
+              
             </GridItem>
           </Section>
           <Section>
             <GridItem
               id="korper"
-              thumbnail={'./images/noon.jpg'}
+              thumbnail={'./images/project/card/ER.jpg'}
               title="Korper"
             >
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium.
+              
             </GridItem>
           </Section>
           <Section>
             <GridItem
               id="korper"
-              thumbnail={'./images/noon.jpg'}
+              thumbnail={'./images/project/card/ER.jpg'}
               title="Korper"
             >
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium.
+              
             </GridItem>
           </Section>
           <Section>
             <GridItem
               id="korper"
-              thumbnail={'./images/noon.jpg'}
+              thumbnail={'./images/project/card/ER.jpg'}
               title="Korper"
             >
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium.
+              
             </GridItem>
           </Section>
         </SimpleGrid>
 
-        <Section delay={0.4}>
+        {/* <Section delay={0.4}>
           <Divider my={6} />
 
           <Heading as="h3" variant="section-title" fontSize={20} mb={4}>
@@ -71,58 +66,7 @@ const Works = () => {
           </Heading>
         </Section>
 
-        <SimpleGrid columns={[1, 1, 2]} gap={6}>
-          <Section>
-            <GridItem
-              id="korper"
-              thumbnail={'./images/noon.jpg'}
-              title="Korper"
-            >
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium.
-            </GridItem>
-          </Section>
-          <Section>
-            <GridItem
-              id="korper"
-              thumbnail={'./images/noon.jpg'}
-              title="Korper"
-            >
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium.
-            </GridItem>
-          </Section>
-          <Section>
-            <GridItem
-              id="korper"
-              thumbnail={'./images/noon.jpg'}
-              title="Korper"
-            >
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium.
-            </GridItem>
-          </Section>
-          <Section>
-            <GridItem
-              id="korper"
-              thumbnail={'./images/noon.jpg'}
-              title="Korper"
-            >
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium.
-            </GridItem>
-          </Section>
-          <Section>
-            <GridItem
-              id="korper"
-              thumbnail={'./images/noon.jpg'}
-              title="Korper"
-            >
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium.
-            </GridItem>
-          </Section>
-        </SimpleGrid>
+        <SimpleGrid columns={[1, 1, 2]} gap={6}></SimpleGrid> */}
       </Container>
     </Layout>
   )

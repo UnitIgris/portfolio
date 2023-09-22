@@ -96,12 +96,12 @@ const Page = () => {
               <Accordion variant={'orange'} allowToggle>
                 <CustomAccordion title={'Experience'}>
                   <CustomPannelExp
-                    poste={'Software Engineer'}
+                    poste={'Web Developer'}
                     link={'korper.io'}
                     content={
-                      'Developing front-end solution on React/Next.js and Electron framework.'
+                      'Developing front-end solution on React/Next.js and MongoDB.'
                     }
-                    tag={['Javascript', 'React', 'NextJS', 'Electron']}
+                    tag={['Node.js', 'React', 'NextJS', 'MongoDB']}
                     src={'korper.png'}
                     Bottomdivider={true}
                   />
@@ -117,7 +117,15 @@ const Page = () => {
                 </CustomAccordion>
                 <CustomAccordion title={'Education'}>
                   <CustomPannelEdu
-                    dates={['2023', '2022']}
+                    dates={['2023', '2025']}
+                    content={
+                      "Mastère CTO & Tech Lead"
+                    }
+                    link={'Hetic'}
+                    src={'hetic.png'}
+                    Bottomdivider={true}
+                  /><CustomPannelEdu
+                    dates={['2022', '2023']}
                     content={
                       "Bachelor's Degree in Web Development\n (3rd year)"
                     }
@@ -126,14 +134,14 @@ const Page = () => {
                     Bottomdivider={true}
                   />
                   <CustomPannelEdu
-                    dates={['2022', '2020']}
+                    dates={['2020', '2022']}
                     content={"Bachelor's Degree in Computer Science"}
                     link={'Paris DesCartes'}
                     src={'descartes.png'}
                     Bottomdivider={true}
                   />
                   <CustomPannelEdu
-                    dates={['2020', '2016']}
+                    dates={['2016', '2020']}
                     content={'Baccalauréat Economique & Social'}
                     link={"Droits de l'Homme"}
                     src={'ddh.png'}
@@ -147,7 +155,7 @@ const Page = () => {
             <Heading as="h3" variant="section-title">
               Some projects
             </Heading>
-            <SimpleGrid columns={[1, 2, 2]} gap={1}>
+            <SimpleGrid columns={[1, 2, 3]} gap={1}>
               <GridItem
                 title="Dev is a fun thing"
                 thumbnail={'./images/noon.jpg'}
