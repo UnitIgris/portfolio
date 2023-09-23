@@ -1,64 +1,40 @@
 import Section from '../components/section'
-import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid, Divider, Center, Text } from '@chakra-ui/react'
 import { GridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
 
 const Works = () => {
   return (
     <Layout title={'Works'}>
-      <Container marginTop={'80px'}>
+      <Container className='work-container' marginTop={'80px'}>
         <Heading as={'h3'} variant="section-title" fontSize={'20'} mb={4}>
           Works
         </Heading>
-        <SimpleGrid columns={[1, 1, 2]} gap={1}>
+        <SimpleGrid columns={[2, 2, 3]} gap={3}>
           <Section>
             <GridItem
               id="korper"
-              thumbnail={'./images/noon.jpg'}
+              thumbnail={'./images/project/card/korper.png'}
               title="Korper"
             >
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium.
             </GridItem>
           </Section>
           <Section>
             <GridItem
-              id="korper"
-              thumbnail={'./images/noon.jpg'}
-              title="Korper"
+              id="belleEpoque"
+              thumbnail={'./images/project/card/belleEpoque.png'}
+              title="Belle Epoque"
+              dark
             >
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium.
             </GridItem>
           </Section>
           <Section>
             <GridItem
-              id="korper"
-              thumbnail={'./images/noon.jpg'}
-              title="Korper"
+              id="acushen"
+              thumbnail={'./images/project/card/acushen.png'}
+              title="Acushen Gwada"
+
             >
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium.
-            </GridItem>
-          </Section>
-          <Section>
-            <GridItem
-              id="korper"
-              thumbnail={'./images/noon.jpg'}
-              title="Korper"
-            >
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium.
-            </GridItem>
-          </Section>
-          <Section>
-            <GridItem
-              id="korper"
-              thumbnail={'./images/noon.jpg'}
-              title="Korper"
-            >
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium.
             </GridItem>
           </Section>
         </SimpleGrid>
@@ -71,58 +47,19 @@ const Works = () => {
           </Heading>
         </Section>
 
-        <SimpleGrid columns={[1, 1, 2]} gap={6}>
-          <Section>
+
+        <Section as="h3" fontSize={20} mb={4}>
+          <Center>On going</Center>
+        </Section>
+        {/*  <SimpleGrid columns={[2, 2, 3]} gap={6}><Section>
             <GridItem
-              id="korper"
-              thumbnail={'./images/noon.jpg'}
-              title="Korper"
+              id="acushen"
+              thumbnail={'./images/project/card/acushen.png'}
+              title="Acushen Gwada"
             >
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium.
             </GridItem>
-          </Section>
-          <Section>
-            <GridItem
-              id="korper"
-              thumbnail={'./images/noon.jpg'}
-              title="Korper"
-            >
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium.
-            </GridItem>
-          </Section>
-          <Section>
-            <GridItem
-              id="korper"
-              thumbnail={'./images/noon.jpg'}
-              title="Korper"
-            >
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium.
-            </GridItem>
-          </Section>
-          <Section>
-            <GridItem
-              id="korper"
-              thumbnail={'./images/noon.jpg'}
-              title="Korper"
-            >
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium.
-            </GridItem>
-          </Section>
-          <Section>
-            <GridItem
-              id="korper"
-              thumbnail={'./images/noon.jpg'}
-              title="Korper"
-            >
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium.
-            </GridItem>
-          </Section>
-        </SimpleGrid>
+          </Section></SimpleGrid> */}
+
       </Container>
     </Layout>
   )

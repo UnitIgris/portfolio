@@ -2,9 +2,10 @@ import { ChakraProvider } from '@chakra-ui/react'
 import Layout from '../components/layouts/main'
 import Fonts from '../components/fonts'
 import theme from '../lib/theme'
+import "../styles/style.scss"
 
 
-const Website = ({ Component, pageProps, router }) => {
+const App = ({ Component, pageProps, router }) => {
   return (
     <ChakraProvider theme={theme}>
       <Fonts/>
@@ -15,4 +16,4 @@ const Website = ({ Component, pageProps, router }) => {
   )
 }
 
-export default Website
+export default App
