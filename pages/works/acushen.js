@@ -3,9 +3,7 @@ import {
     Badge,
     Link,
     List,
-    Stack,
     SimpleGrid,
-    Divider,
     Heading,
     Center,
     Image,
@@ -35,8 +33,7 @@ const Acushen = () => (
                     </Link>
                 </Center>
             </List>
-            <Stack fontFamily="Roboto Mono" direction="row" h="110px"  >
-                <Divider orientation="vertical" /> {/*version desktop toolong */}
+            <Box fontFamily="Roboto Mono" sx={{ display: "flex", paddingLeft: "10px", borderLeft: "1px solid #343434" }} h="100%"  >
                 <Box lineHeight={'1.5'}>
                     <p>
                         <Badge>Location</Badge>Paris,FR
@@ -51,7 +48,7 @@ const Acushen = () => (
                         <Badge>Stack</Badge>React, Next
                     </p>
                 </Box>
-            </Stack>
+            </Box>
             <Heading as="h4" fontSize={20} mt={8} mb={2}>
                 Mission
             </Heading>
