@@ -15,7 +15,7 @@ import Layout from '../../components/layouts/article'
 const Acushen = () => (
     <Layout title="AcushenGwada">
         <Container>
-            <Title>AcushenGwada</Title>
+            <Title>Acushen Gwada</Title>
             <p>
                 Your well-being is their priority. Each session is tailored
                 to meet your individual needs and guide you towards an optimal
