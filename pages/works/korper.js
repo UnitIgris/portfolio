@@ -10,33 +10,27 @@ import {
   Center,
   Image,
   Box,
-  Button,
 } from '@chakra-ui/react'
-import { Title, BadgeCustom, MediaBox } from '../../components/work'
+import { Title } from '../../components/work'
 import Layout from '../../components/layouts/article'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
 
-const Work = () => (
+const Korper = () => (
   <Layout title="Korper">
     <Container>
       <Title>Korper</Title>
-
       <p>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-        illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-        explicabo.
-      </p>
-      <p>
-        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-        fugit,
+        Korper offers personalized fitness coaching at an affordable rate.
+        Users select a qualified coach through the app, receiving customized
+        workouts and regular check-ins. Since its 2022 launch, Korper has gained
+        over a hundred members, showcasing its effectiveness. Korper aspires
+        to be the top choice for European sports coaching.
       </p>
       <List ml={4} my={4}>
         <Center my={30}>
           <Link
             fontFamily="Poppins"
             href='https://korper.io'
-            sx={{ display: "flex", justifyContent: "center", py: "5px", fontWeight: 600, color: 'white', background: '#292A30' }}
+            sx={{ display: "flex", justifyContent: "center", py: "5px", borderRadius: 3, fontWeight: 600, color: 'white', background: '#292A30' }}
             w={'100%'}
           >
             VISIT WEBSITE
@@ -50,10 +44,13 @@ const Work = () => (
             <Badge>Location</Badge>Paris,FR
           </p>
           <p>
-            <Badge>Date</Badge>02.01.2023 - 22.09.2023
+            <Badge>Date</Badge>
+            <Badge sx={{ backgroundColor: "#e6ce9a29", color: "#e6da9a" }}>Apprenticeship</Badge>
+            02.01.2023 - 22.09.2023
           </p>
           <p>
-            <Badge>Job</Badge>Web Developer
+            <Badge>Job</Badge>
+            Web Developer
           </p>
           {/* <p>
             <Badge>Blogpost</Badge>
@@ -67,37 +64,25 @@ const Work = () => (
           </p>
         </Box>
       </Stack>
-
-      <Heading as="h4" fontSize={16} mt={8} mb={2}>
-        <Center>Media coverage</Center>
+      <Heading as="h4" fontSize={20} mt={8} mb={2}>
+        Mission
       </Heading>
-
       <Box>
-        <MediaBox
-          href={
-            'https://www.francebleu.fr/emissions/la-nouvelle-eco-de-france-bleu-paris/le-couise-un-jeu-de-culture-francaise-a-offrir-a-noel-5426346'
-          }
-          title={'France Bleu'}
-          article={"Korper, l'application de coaching sportif sur-mesure"}
-        />
-        <MediaBox
-          href={
-            'https://www.sportstrategies.com/korper-un-veritable-coach-sportif-dans-votre-poche/'
-          }
-          title={'SPORT STRATÉGIES'}
-          article={'KORPER : UN VÉRITABLE COACH SPORTIF DANS VOTRE POCHE'}
-        />
+        I was tasked with creating a blog as well as an internal dashboard
+        for article management, refactoring and developing the onboarding
+        flow, developing and maintaining the internal platform for coaches,
+        and testing the mobile application.
       </Box>
-
-      <SimpleGrid mt={8} columns={2} gap={2}>
-        <Image src="../images/noon.jpg" alt="zzz" />
-        <Image src="../images/noon.jpg" alt="zzz" />
-      </SimpleGrid>
-      <Image src="../images/noon.jpg" alt="zzz" />
-      <Image src="../images/noon.jpg" alt="zzz" />
-      <Image src="../images/noon.jpg" alt="zzz" />
+      <Box mt={8}>
+        <Image sx={{ borderRadius: 3 }} src="../images/korper/korper-pc_1.png" alt="pc" />
+        <Image mt={2} sx={{ borderRadius: 3 }} src="../images/korper/korper-pc_2.png" alt="pc" />
+        <SimpleGrid columns={[1, 2, 2]} mt={2} gap={2}>
+          <Image sx={{ borderRadius: 3 }} src="../images/korper/korper-phone_1.png" alt="phone" />
+          <Image sx={{ borderRadius: 3 }} src="../images/korper/korper-phone_2.png" alt="phone" />
+        </SimpleGrid>
+      </Box>
     </Container>
   </Layout>
 )
 
-export default Work
+export default Korper

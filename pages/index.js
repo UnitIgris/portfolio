@@ -60,20 +60,23 @@ const Page = () => {
               About
             </Heading>
             <Paragraph>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea&nbsp;
-              <Link as={NextLink} href="" passHref scroll={false}>
-                commodo
+              Hello, my name is Samuel. I am a web development student based in Paris. 
+              My passion for creating digital services and my interest in creative 
+              design constantly drive me to seek innovative solutions. I particularly 
+              enjoy working on projects that challenge my skills and allow me to push 
+              the boundaries of web design. My goal is to become a Creative Developer.
+               I am always in pursuit of learning and eagerly look forward to taking 
+               on new challenges in the field of web development.
+              {/* <Link as={NextLink} href="" passHref scroll={false} target="_blank">
+                &nbsp;commodo
               </Link>
               . Consequat. Duis aute irure dolor in reprehenderit in voluptate
               velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
               occaecat cupidatat non proident, sunt in &quot;
               <Link as={NextLink} href="" passHref target="_blank">
                 culpa
-              </Link>
-              &quot; qui officia deserunt mollit anim id est laborum.
+              </Link> */}
+
             </Paragraph>
             <Box align="center" my={4}>
               <Button
@@ -106,7 +109,7 @@ const Page = () => {
                     Bottomdivider={true}
                   />
                   <CustomPannelExp
-                    poste={'Web Developer'}
+                    poste={'React Developer'}
                     link={'agence-belle-epoque.fr'}
                     content={
                       'Incorporation of components, onboarding flow development, and homepage design.'
@@ -173,6 +176,7 @@ const Page = () => {
                 id="acushen"
                 thumbnail={'./images/project/card/acushen.png'}
                 title="Acushen Gwada"
+                mobileoff
               >
               </GridItem>
             </SimpleGrid>

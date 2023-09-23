@@ -6,9 +6,9 @@ import {
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 
-export const GridItem = ({ dark, id, title, thumbnail }) => {
+export const GridItem = ({ dark,mobileoff, id, title, thumbnail }) => {
   return (
-    <Card className='grid-item-wrapper'>
+    <Card className={`grid-item-wrapper ${mobileoff ? "mobileOff":"" } `}>
       <LinkBox
         as={NextLink}
         href={`/works/${id}`}
