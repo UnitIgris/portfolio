@@ -120,7 +120,7 @@ const Page = () => {
                 </CustomAccordion>
                 <CustomAccordion title={'Education'}>
                   <CustomPannelEdu
-                    dates={['2023', '2025']}
+                    dates={['2025', '2023']}
                     content={
                       "Mastère CTO & Tech Lead"
                     }
@@ -128,7 +128,7 @@ const Page = () => {
                     src={'hetic.png'}
                     Bottomdivider={true}
                   /><CustomPannelEdu
-                    dates={['2022', '2023']}
+                    dates={['2023', '2022']}
                     content={
                       "Bachelor's Degree in Web Development\n (3rd year)"
                     }
@@ -137,14 +137,14 @@ const Page = () => {
                     Bottomdivider={true}
                   />
                   <CustomPannelEdu
-                    dates={['2020', '2022']}
+                    dates={['2022', '2020']}
                     content={"Bachelor's Degree in Computer Science"}
                     link={'Paris DesCartes'}
                     src={'descartes.png'}
                     Bottomdivider={true}
                   />
                   <CustomPannelEdu
-                    dates={['2016', '2020']}
+                    dates={['2020', '2016']}
                     content={'Baccalauréat Economique & Social'}
                     link={"Droits de l'Homme"}
                     src={'ddh.png'}
