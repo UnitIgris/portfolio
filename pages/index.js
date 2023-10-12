@@ -52,7 +52,7 @@ const Page = () => {
           fontSize={[14, 14, 22]}
           textAlign="center"
         >
-          {'FRONT END, APP DEVELOPER & DESIGNER'}
+          {'WEB DEV, APP DEVELOPER & DESIGNER'}
         </Heading>{' '}
         <Box pt={16} maxW="container.sm">
           <Section delay={0.1}>
